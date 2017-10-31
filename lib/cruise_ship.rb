@@ -10,7 +10,7 @@ def select_winner(passengers)
   passengers.select do |key, value|
     if key === :suite_a
       value.start_with?("A")
-      value
+      puts value
     end
   end
 end
