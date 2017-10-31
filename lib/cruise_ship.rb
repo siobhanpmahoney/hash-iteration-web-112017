@@ -7,5 +7,10 @@
 # }
 
 def select_winner(passengers)
-  # add the code snippet here!
+  passengers.select do |key, value|
+    if key === :suite_a
+      value.start_with?("A")
+      value
+    end
+  end
 end
